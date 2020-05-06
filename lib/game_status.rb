@@ -70,9 +70,9 @@ def draw?(board)
 end
 
 def full?(board)
-	if board.any?{ |index| index = ""} == true
-		true
-	else
+	if board.any?{ |index| board[index] = ""} == true
 		false
+	else
+		true
 	end
 end
