@@ -19,8 +19,8 @@ def won?(board)
  	WIN_COMBINATIONS.each do |combo|
 		if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]
 			combo
-		else 
-			nil 
+		else
+			nil
 		 end
 	end
 end
@@ -30,7 +30,7 @@ def winner(board)
 		combo = won?(board)
 		board[combo[0]]
 	else
-		nil 
+		nil
 	end
 end
 
