@@ -71,8 +71,8 @@ end
 
 def full?(board)
 	if board.any?{ |index| index = ""} == true
-		false
-	else
 		true
+	else
+		false
 	end
 end
