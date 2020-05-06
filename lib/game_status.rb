@@ -18,10 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
  		WIN_COMBINATIONS.each do |combo|
 			if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]
-	   			return combo # return the win_combination indexes that won.
-			else
-				nil
-	  		end
+			 position_taken?(board, combo[0])
 	end
 end
 
