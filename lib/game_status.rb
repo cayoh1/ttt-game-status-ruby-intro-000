@@ -70,9 +70,8 @@ def draw?(board)
 end
 
 def full?(board)
-	if board.any?{ |index| index != "X" || index != "O" } == true
+	if board.any?{ |index| index != "X" || index != "O" } 
 		false
-	else
-		true
+	true
 	end
 end
