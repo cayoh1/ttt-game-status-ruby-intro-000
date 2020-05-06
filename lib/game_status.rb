@@ -29,8 +29,9 @@ def won?(board)
 	   		return combo # return the win_combination indexes that won.
 		elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
    	   		return combo # return the win_combination indexes that won.
+		else
+			false
 	  	end
-		false 
 	end
 end
 
